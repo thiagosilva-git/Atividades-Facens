@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04 - Mídias em HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            background: #f0f0f0;
+            padding: 10px;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 10px;
+            padding: 10px;
+        }
+        .box {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center;
+        }
+        .destaque {
+            background: yellow;
+        }
+        .container-footer {
+            text-align: center;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        .div-container {
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        input, textarea {
+            width: 95%;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aula 04 - Mídias em HTML</h1>
+
+    <div class="container">
+        <!-- Imagens -->
+        <div class="box">
+            <h3>Imagens</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28rosto%29.jpg" alt="Imagem 1"><br>Imagem 1<br>
+            <img src="https://via.placeholder.com/80" alt="Imagem 2"><br>Imagem 2<br>
+            <img src="https://www.google.com/imgres?q=CORINTHIANS%20CAMPEAO%20MUNDIAL%20IMAGENS&imgurl=https%3A%2F%2Fstatic.corinthians.com.br%2Fuploads%2F1608038346421b3ac5c24ee992edd6087611c60dbb.png&imgrefurl=https%3A%2F%2Fwww.corinthians.com.br%2Fnoticias%2Fcorinthians-conquistava-o-mundo-pela-segunda-vez-ha-oito-anos&docid=DHOjE6MShkGLMM&tbnid=ns0kq0xjSUa-QM&vet=12ahUKEwiO2tKclLqPAxUAELkGHa0dLL4QM3oECB8QAA..i&w=1952&h=1254&hcb=2&ved=2ahUKEwiO2tKclLqPAxUAELkGHa0dLL4QM3oECB8QAA" alt="Imagem 3"><br>Imagem 3<br>
+
+        </div>
+
+        <!-- Vídeo -->
+        <div class="box">
+            <h3>Vídeo</h3>
+            <video width="100%" controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <!-- Áudio -->
+        <div class="box">
+            <h3>Áudio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </div>
+
+        <!-- Formulário -->
+        <div class="box">
+            <h3>Formulário</h3>
+            <form>
+                Nome:<br>
+                <input type="text" name="nome"><br>
+                E-mail:<br>
+                <input type="email" name="email"><br>
+                Mensagem:<br>
+                <textarea name="mensagem"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Links -->
+        <div class="box">
+            <h3>Links</h3>
+            <a href="https://facens.br" target="_blank">Facens</a><br>
+            <a href="https://www.youtube.com/watch?v=hQ4XSgLd2rs&pp=ygUTYmFuaGVpcmEgZGUgbnV0ZWxsYQ%3D%3D" target="_blank"><img src="https://via.placeholder.com/80" alt="Video no youtube"></a>
+        </div>
+
+        <!-- Listas -->
+        <div class="box">
+            <h3>Listas</h3>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item
+                    <ul>
+                        <li>Item A</li>
+                        <li>Item B</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Tabelas -->
+        <div class="box">
+            <h3>Tabelas</h3>
+            <table>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                </tr>
+                <tr>
+                    <td>Linha 1</td>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                </tr>
+                <tr>
+                    <td>Linha 2</td>
+                    <td>Dado 3</td>
+                    <td>Dado 4</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Identificadores e Classes -->
+        <div class="box">
+            <h3>Identificadores e Classes</h3>
+            <p id="paragrafo-id">Parágrafo com id.</p>
+            <p class="destaque">Parágrafo com classe "destaque".</p>
+
+            <div class="div-container">
+                <h3>Div Contêiner</h3>
+                <p>Parágrafo dentro do contêiner.</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="container-footer">
+        © 2025 - Exemplo didático de HTML da Aula 04
+    </div>
+
+</body>
+</html>
