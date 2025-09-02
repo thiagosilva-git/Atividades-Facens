@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04 - Mídias em HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            background: #f0f0f0;
+            padding: 10px;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 10px;
+            padding: 10px;
+        }
+        .box {
+            border: 0px solid #ddd;
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center;
+        }
+        .destaque {
+            background: yellow;
+        }
+        .container-footer {
+            text-align: center;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        .div-container {
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        input, textarea {
+            width: 95%;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aula 04 - Mídias em HTML</h1>
+
+    <div class="container">
+        <!-- Imagens -->
+        <div class="box">
+            <h3>Imagens</h3>
+            <img src="https://i.ytimg.com/vi/IS7BZHkGd-g/maxresdefault.jpg" alt="Imagem 1" width="70px"><br>Imagem do Gr<br>
+            <img src="https://th.bing.com/th/id/R.46f772346f257c3bd745f7ed875c461d?rik=YB754js1lGhVqA&riu=http%3a%2f%2fi.ytimg.com%2fvi%2fgtbBh8kDgPw%2fhqdefault.jpg&ehk=9E17zfHmMmuaDBVDKhSw89OiGzr9fH93VUa%2bbYdqBrM%3d&risl=&pid=ImgRaw&r=0" alt="Imagem 2" width="70px"><br>Imagem FISICULTURISTA<br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_%28rosto%29.jpg" alt="Imagem LULA" width="70px" height="50px"><br>Imagem LULA<br>
+
+        </div>
+
+        <!-- Vídeo -->
+        <div class="box">
+            <h3>Vídeo</h3>
+          <video width="90%" controls>
+            <source src="WhatsApp Video 2025-09-02 at 10.52.42.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <!-- Áudio -->
+        <div class="box">
+            <h3>Áudio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </div>
+
+        <!-- Formulário -->
+        <div class="box">
+            <h3>Formulário para se inscrever no campeonato de fortnite</h3>
+            <form>
+                Nome:<br>
+                <input type="text" name="nome"><br>
+                E-mail:<br>
+                <input type="email" name="email"><br>
+                <button type="submit">Enviar</button>
+            </form>
+     </div>
+
+        <!-- Links -->
+        <div class="box">
+            <h3>Links</h3>
+            <a href="https://facens.br" target="_blank">Facens</a><br>
+            <a href="https://www.youtube.com/watch?v=hQ4XSgLd2rs&pp=ygUTYmFuaGVpcmEgZGUgbnV0ZWxsYQ%3D%3D" target="_blank">Video foca</a> 
+        </div>
+
+        <!-- Listas -->
+        <div class="box">
+            <h3>Top 10 melhores times do Brasil</h3>
+            <ol>
+                <li>sao paulo</li>
+                <li>Flamengo</li>   
+                <li>Palmeiras</li>
+                <li>Botafogo </li>
+                <li>Cruzeiro</li> </li>
+                <li>Mirassol</li>  
+                <li>Corinthians </li>
+                <li>Santos</li>
+                <li>Fluminense</li>
+                <li>Atletico Mineiro</li>
+            </ol>
+        </div>
+        <!-- Tabelas -->
+        <div class="box">
+            <h3>Tabela de Presidentes do Brasil</h3>
+            <table>
+                <tr>
+                    <th>PT</th>
+                    <th>PL</th>
+                    <th>PSDB</th>   
+                </tr>
+                <tr>
+                    <td>Haddad</td>
+                    <td>Bolsonaro</td>
+                    <td>Siro Gomes</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Identificadores e Classes -->
+        <div class="box">
+            <h3>Identificadores e Classes</h3>
+            <p id="paragrafo-id">Parágrafo com id.</p>
+            <p class="destaque">Parágrafo com classe "destaque".</p>
+
+            <div class="div-container">
+                <h3>Div Contêiner</h3>
+                <p>Parágrafo dentro do contêiner.</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="container-footer">
+        © 2025 - Exemplo didático de HTML da Aula 04
+    </div>
+
+</body>
+</html>
+
