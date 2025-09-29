@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistamento Militar Online - Brasil</title>
+    <meta name="description" content="Realize seu alistamento militar de forma rápida, segura e totalmente online. Plataforma oficial para jovens brasileiros.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Top bar com redes sociais -->
+            <div class="top-bar">
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <button class="btn btn-gold btn-sm">ALISTAMENTO MILITAR FEMININO</button>
+            </div>
+
+            <!-- Navegação principal -->
+            <div class="main-nav">
+                <div class="logo">
+                    <h1>ALISTAMENTO <span class="gold">online</span></h1>
+                </div>
+
+                <nav class="nav">
+                    <a href="#servicos">SERVIÇOS</a>
+                    <a href="#faq">PERGUNTAS FREQUENTES</a>
+                    <a href="#contato">CONTATO</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Menu pra celular -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#servicos" onclick="closeMobileMenu()">SERVIÇOS</a>
+                    <a href="#faq" onclick="closeMobileMenu()">PERGUNTAS FREQUENTES</a>
+                    <a href="#contato" onclick="closeMobileMenu()">CONTATO</a>
+                    <button class="btn btn-gold btn-sm">ALISTAMENTO MILITAR FEMININO</button>
+                    <div class="mobile-social">
+                        <a href="https://www.facebook.com/exercito/?locale=pt_BR" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/exercito_oficial" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://br.linkedin.com/company/exercito" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@exercitooficial" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- Military badges -->
+        <div class="military-badges">
+            <div class="badge gold">EB</div>
+            <div class="badge white">MB</div>
+            <div class="badge gold">FAB</div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                ALISTAMENTO<br>
+                <span class="gold">MILITAR ONLINE</span>
+            </h1>
+            <p class="hero-subtitle">
+                Realize seu alistamento militar de forma rápida, segura e totalmente online
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-gold btn-lg">QUERO ME ALISTAR</button>
+                <button class="btn btn-hero btn-lg">JÁ ME ALISTEI</button>
+            </div>
+
+            <!-- Quick info -->
+            <div class="quick-info">
+                <div class="info-item">
+                    <h3>100%</h3>
+                    <p>Digital e Seguro</p>
+                </div>
+                <div class="info-item">
+                    <h3>24h</h3>
+                    <p>Disponível</p>
+                </div>
+                <div class="info-item">
+                    <h3>18-45</h3>
+                    <p>Anos de Idade</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos <span class="gold">Serviços</span></h2>
+                <p>Oferecemos uma plataforma completa para todas as suas necessidades relacionadas ao serviço militar</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Alistamento Obrigatório</h3>
+                    <p>Para jovens de 18 anos que devem se apresentar ao serviço militar obrigatório.</p>
+                    <ul>
+                        <li><span class="dot"></span>Processo 100% online</li>
+                        <li><span class="dot"></span>Documentação digital</li>
+                        <li><span class="dot"></span>Acompanhamento em tempo real</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Alistamento Voluntário</h3>
+                    <p>Para cidadãos que desejam servir voluntariamente às Forças Armadas.</p>
+                    <ul>
+                        <li><span class="dot"></span>Múltiplas modalidades</li>
+                        <li><span class="dot"></span>Processo simplificado</li>
+                        <li><span class="dot"></span>Orientação completa</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Segunda Via de Documentos</h3>
+                    <p>Solicite a segunda via do seu Certificado de Reservista ou outros documentos.</p>
+                    <ul>
+                        <li><span class="dot"></span>Solicitação online</li>
+                        <li><span class="dot"></span>Entrega rápida</li>
+                        <li><span class="dot"></span>Validação automática</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Acompanhamento</h3>
+                    <p>Acompanhe o status do seu processo de alistamento em tempo real.</p>
+                    <ul>
+                        <li><span class="dot"></span>Status atualizado</li>
+                        <li><span class="dot"></span>Notificações automáticas</li>
+                        <li><span class="dot"></span>Suporte dedicado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <button class="btn btn-military btn-lg">Ver Todos os Serviços</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ALISTAMENTO <span class="gold">online</span></h3>
+                    <p>Plataforma oficial para alistamento militar no Brasil. Processo 100% digital, seguro e confiável.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Alistamento Obrigatório</a></li>
+                        <li><a href="#">Alistamento Voluntário</a></li>
+                        <li><a href="#">Segunda Via</a></li>
+                        <li><a href="#">Acompanhamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Documentos Necessários</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 0800 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> contato@alistamento.gov.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Brasília, DF</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alistamento Militar Online. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
