@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Base */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 :root {
-    /* Colors */
+    /* Cores */
     --military-green: #2d5016;
     --military-green-light: #4a7c2c;
     --military-green-dark: #1a3009;
@@ -17,16 +17,16 @@
     --gray-medium: #666666;
     --gray-dark: #333333;
 
-    /* Gradients */
+    /* Gradientes */
     --gradient-military: linear-gradient(135deg, var(--military-green), var(--military-green-light));
     --gradient-hero: linear-gradient(135deg, rgba(29, 48, 9, 0.9), rgba(74, 124, 44, 0.7));
     --gradient-gold: linear-gradient(135deg, var(--military-gold), var(--military-gold-dark));
 
-    /* Shadows */
+    /* Sombras */
     --shadow-military: 0 10px 30px -10px rgba(45, 80, 22, 0.3);
     --shadow-gold: 0 10px 30px -10px rgba(212, 175, 55, 0.4);
 
-    /* Typography */
+    /* Texto*/
     --font-primary: 'Arial', sans-serif;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -45,12 +45,12 @@ body {
     padding: 0 20px;
 }
 
-/* Utilities */
+/* Utilidades */
 .gold {
     color: var(--military-gold);
 }
 
-/* Buttons */
+/* Botoes */
 .btn {
     display: inline-block;
     padding: 12px 24px;
