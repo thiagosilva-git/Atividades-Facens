@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Gov.br (inspirado)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-light">
+  <main class="container" style="display: flex; gap: 32px; justify-content: center; align-items: flex-start; margin-top: 48px;">
+    <section class="card" style="background: var(--white); box-shadow: var(--shadow-military); border-radius: 12px; padding: 32px; min-width: 340px; max-width: 400px;">
+      <div class="brand" style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px;">
+        <div class="logo" style="width: 56px; height: 56px; border-radius: 8px; background: var(--gradient-military); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1.5rem;">gov</div>
+        <div>
+          <h1 id="login-title" style="font-size: 1.3rem; margin: 6px 0 2px; font-family: var(--font-primary); font-weight: var(--font-weight-bold); color: var(--military-green-dark);">Acesso gov.br — (inspirado)</h1>
+          <p class="lead" style="margin:0; color: var(--gray-medium); font-family: var(--font-primary);">Use sua conta gov.br para entrar com segurança.</p>
+        </div>
+      </div>
+
+      <form id="loginForm" autocomplete="on" aria-describedby="desc" style="display: flex; flex-direction: column; gap: 16px;">
+        <p id="desc" class="small" style="color: var(--gray-dark); font-size: 0.95rem;">Insira seu CPF, e-mail ou usuário e sua senha.</p>
+
+        <div>
+          <label for="user" style="font-size: 1rem; color: var(--military-green); font-family: var(--font-primary);">CPF / E‑mail / Usuário</label>
+          <input id="user" name="user" type="text" inputmode="text" required placeholder="ex: 000.000.000-00 ou nome@email.com" style="padding: 12px; border-radius: 8px; border: 1px solid var(--gray-light); font-size: 1rem; width: 100%;">
+        </div>
+
+        <div>
+          <label for="password" style="font-size: 1rem; color: var(--military-green); font-family: var(--font-primary);">Senha</label>
+          <input id="password" name="password" type="password" required placeholder="Sua senha" style="padding: 12px; border-radius: 8px; border: 1px solid var(--gray-light); font-size: 1rem; width: 100%;">
+        </div>
+
+        <div class="actions" style="display: flex; gap: 12px; align-items: center; margin-top: 6px;">
+          <button type="submit" class="btn btn-gold" style="font-size: 1rem;">Entrar</button>
+          <button type="button" id="altSign" class="btn" style="background: var(--white); color: var(--military-green); border: 1px solid var(--military-green-light); font-size: 1rem;">Entrar com APP</button>
+        </div>
+
+        <div class="links" style="margin-top:8px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="#" id="esqueci" style="color: var(--military-green-light); font-size: 0.95rem;">Esqueci minha senha</a>
+          <a href="#" id="criar" style="color: var(--military-gold); font-size: 0.95rem;">Criar conta gov.br</a>
+        </div>
+
+        <div class="footer small" style="margin-top: 18px; font-size: 0.95rem; color: var(--gray-medium);">
+          <strong>Observação:</strong> Esta página é um exemplo inspirado no fluxo de login do gov.br. Não faz autenticação real com os serviços do governo.
+        </div>
+      </form>
+    </section>
+
+    
+  </main>
+
+  <script>
+    // Lê parâmetros da query string
+    function qs(key){const u=new URL(window.location.href);return u.searchParams.get(key)}
+    document.getElementById('clientId').textContent = qs('client_id') || '—';
+    document.getElementById('authId').textContent = qs('authorization_id') || '—';
+
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      // comportamento simulado: cria token falso e redireciona para um callback local
+      const token = 'fake_token_' + Math.random().toString(36).slice(2,12);
+      const client = encodeURIComponent(qs('client_id') || 'local');
+      const auth = encodeURIComponent(qs('authorization_id') || '');
+      // Gera URL de callback (apenas exemplo); em integração real o servidor trataria o token
+      const callback = (qs('redirect_uri') || 'callback.html') + '?access_token=' + token + '&client_id=' + client + '&authorization_id=' + auth;
+      // Mostra alerta (para prototipagem) e redireciona
+      alert('Login simulado concluído — redirecionando para: ' + callback);
+      window.location.href = callback;
+    });
+
+    document.getElementById('altSign').addEventListener('click', function(){
+      alert('Fluxo de login por app (simulado)');
+    });
+
+    document.getElementById('esqueci').addEventListener('click', function(e){e.preventDefault();alert('Fluxo de recuperação de senha (simulado)');});
+    document.getElementById('criar').addEventListener('click', function(e){e.preventDefault();alert('Fluxo de criação de conta gov.br (simulado)');});
+  </script>
+</body>
+</html>
