@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alistamento Militar Online - Brasil</title>
-    <meta name="description" content="Realize seu alistamento militar de forma rápida, segura e totalmente online. Plataforma oficial para jovens brasileiros.">
+    <title>Alistamento Militar Online - Serviços</title>
+    <meta name="description" content="Plataforma de serviços do Alistamento Militar Online.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
-            <!-- Top bar com redes sociais -->
             <div class="top-bar">
                 <div class="social-links">
                     <a href="https://www.facebook.com/exercito/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -23,7 +21,6 @@
                 <a href="alisfemin.html"><button class="btn btn-gold btn-sm">ALISTAMENTO MILITAR FEMININO</button></a>
             </div>
 
-            <!-- Navegação principal -->
             <div class="main-nav">
                 <div class="logo">
                     <a href="index.html"><h1>ALISTAMENTO <span class="gold">online</span></h1></a>
@@ -39,7 +36,6 @@
                 </button>
             </div>
 
-            <!-- Menu pra celular -->
             <div class="mobile-menu" id="mobileMenu">
                 <nav class="mobile-nav">
                     <a href="servicos.html" onclick="closeMobileMenu()">SERVIÇOS</a>
@@ -49,118 +45,50 @@
                         <a href="https://www.facebook.com/exercito/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/exercito_oficial" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://br.linkedin.com/company/exercito" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@exercitooficial"target="_blank"  aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@exercitooficial" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                ALISTAMENTO<br>
-                <span class="gold">MILITAR ONLINE</span>
-            </h1>
-            <p class="hero-subtitle">
-                Realize seu alistamento militar de forma rápida, segura e totalmente online
-            </p>
-            <div class="hero-buttons">
-                <a href="login.html"><button class="btn btn-gold btn-lg">QUERO ME ALISTAR</button></a>
-                <a href="login.html"><button class="btn btn-hero btn-lg">JÁ ME ALISTEI</button></a>
+    <main class="container section services">
+        <div class="section-header">
+            <h2>Nossos <span class="gold">Serviços</span></h2>
+            <p>Oferecemos uma plataforma completa para todas as suas necessidades relacionadas ao serviço militar</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                <a href="login.html"><h3>Alistamento Online</h3></a>
+                <p>Realize o seu alistamento militar de forma rápida e segura.</p>
             </div>
 
-            <!-- Quick info -->
-            <div class="quick-info">
-                <div class="info-item">
-                    <h3>100%</h3>
-                    <p>Digital e Seguro</p>
-                </div>
-                <div class="info-item">
-                    <h3>24h</h3>
-                    <p>Disponível</p>
-                </div>
-                <div class="info-item">
-                    <h3>18-45</h3>
-                    <p>Anos de Idade</p>
-                </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                <a href="login.html"><h3>Requerer Certificado de Dispensa</h3></a>
+                <p>Solicitar certificado ou verificar a situação do requerimento.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-search-location"></i></div>
+                <a href="login.html"><h3>Locais de Atendimento</h3></a>
+                <p>Encontre uma Junta de Serviço Militar próxima da sua residência.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-id-card"></i></div>
+                <a href="login.html"><h3>Autenticar Certificado</h3></a>
+                <p>Verifique a validade do documento militar.</p>
             </div>
         </div>
-        
-    </section>
 
-    <!-- Services Section -->
-    <section id="servicos" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nossos <span class="gold">Serviços</span></h2>
-                <p>Oferecemos uma plataforma completa para todas as suas necessidades relacionadas ao serviço militar</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Alistamento Obrigatório</h3>
-                    <p>Para jovens de 18 anos que devem se apresentar ao serviço militar obrigatório.</p>
-                    <ul>
-                        <li><span class="dot"></span>Processo 100% online</li>
-                        <li><span class="dot"></span>Documentação digital</li>
-                        <li><span class="dot"></span>Acompanhamento em tempo real</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Alistamento Voluntário</h3>
-                    <p>Para cidadãos que desejam servir voluntariamente às Forças Armadas.</p>
-                    <ul>
-                        <li><span class="dot"></span>Múltiplas modalidades</li>
-                        <li><span class="dot"></span>Processo simplificado</li>
-                        <li><span class="dot"></span>Orientação completa</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <h3>Segunda Via de Documentos</h3>
-                    <p>Solicite a segunda via do seu Certificado de Reservista ou outros documentos.</p>
-                    <ul>
-                        <li><span class="dot"></span>Solicitação online</li>
-                        <li><span class="dot"></span>Entrega rápida</li>
-                        <li><span class="dot"></span>Validação automática</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Acompanhamento</h3>
-                    <p>Acompanhe o status do seu processo de alistamento em tempo real.</p>
-                    <ul>
-                        <li><span class="dot"></span>Status atualizado</li>
-                        <li><span class="dot"></span>Notificações automáticas</li>
-                        <li><span class="dot"></span>Suporte dedicado</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="services-cta">
-                <a href="servicos.html"><button class="btn btn-military btn-lg">Ver Todos os Serviços</button></a>
-            </div>
+        <div class="services-cta">
+            <a href="login.html" class="btn btn-military btn-lg">Quero me Alistar</a>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -171,7 +99,7 @@
                         <a href="https://www.facebook.com/exercito/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/exercito_oficial" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://br.linkedin.com/company/exercito" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@exercitooficial"target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@exercitooficial" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -208,6 +136,14 @@
         </div>
     </footer>
 
-    
+    <script>
+        function closeMobileMenu(){ 
+            const menu = document.getElementById('mobileMenu');
+            if(menu) menu.classList.remove('open');
+        }
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', function(){
+            document.getElementById('mobileMenu')?.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

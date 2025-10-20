@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alistamento Militar Online - Perguntas Frequentes</title>
+  <meta name="description" content="Perguntas frequentes sobre alistamento militar e Serviço Militar Inicial Feminino (SMIF).">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- projeto: estilos principais (igual ao index.html) -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome (mesma versão usada nas outras páginas) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- preserve existing project css/libs if still required (kept minimal) -->
+  <link rel="stylesheet" href="/assets/lib/alertify/alertify.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <!-- Header (igual ao index.html para mesmas fontes/cores/estrutura) -->
+  <header class="header">
+    <div class="container">
+      <div class="top-bar">
+        <div class="social-links">
+          <a href="https://www.facebook.com/exercito/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/exercito_oficial" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://br.linkedin.com/company/exercito" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@exercitooficial" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <a href="alisfemin.html"><button class="btn btn-gold btn-sm">ALISTAMENTO MILITAR FEMININO</button></a>
+      </div>
+
+      <div class="main-nav">
+        <div class="logo">
+          <a href="index.html"><h1>ALISTAMENTO <span class="gold">online</span></h1></a>
+        </div>
+
+        <nav class="nav">
+          <a href="servicos.html">SERVIÇOS</a>
+          <a href="pf.html">PERGUNTAS FREQUENTES</a>
+        </nav>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="servicos.html" onclick="closeMobileMenu()">SERVIÇOS</a>
+          <a href="pf.html" onclick="closeMobileMenu()">PERGUNTAS FREQUENTES</a>
+          <a href="alisfemin.html"><button class="btn btn-gold btn-sm">ALISTAMENTO MILITAR FEMININO</button></a>
+          <div class="mobile-social">
+            <a href="https://www.facebook.com/exercito/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/exercito_oficial" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://br.linkedin.com/company/exercito" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@exercitooficial" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal (mantive todo o conteúdo original das abas/accordions) -->
+  <main class="container section py-5">
+    <div class="section-header text-center mb-4">
+      <h2>Perguntas <span class="gold">Frequentes</span></h2>
+      <p>Informações sobre alistamento, dispensa e o Serviço Militar Inicial Feminino (SMIF)</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs mb-3" id="navTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#tabp1" type="button" role="tab" aria-controls="tabp1" aria-selected="true">Serviço Militar</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#tabp2" type="button" role="tab" aria-controls="tabp2" aria-selected="false">Alistamento Militar</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#tabp3" type="button" role="tab" aria-controls="tabp3" aria-selected="false">Dispensa</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#tabp4" type="button" role="tab" aria-controls="tabp4" aria-selected="false">Alistamento Militar Inicial Feminino</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#tabp5" type="button" role="tab" aria-controls="tabp5" aria-selected="false">Legislações</button>
+          </li>
+        </ul>
+
+        <!-- Tab panes (conteúdo original mantido) -->
+        <div class="tab-content" id="navTabContent">
+          <!-- Tab 1 -->
+          <div class="tab-pane fade show active" id="tabp1" role="tabpanel" aria-labelledby="tab1">
+            <div class="accordion" id="accordion1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1. O QUE É O SERVIÇO MILITAR?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                  <div class="accordion-body">É o exercício de atividades específicas desempenhadas por militares da Marinha, Exército ou Aeronáutica.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                  2. O QUE É O SERVIÇO MILITAR INICIAL OBRIGATÓRIO?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion1">
+                  <div class="accordion-body">É o período em que o brasileiro recebe instrução militar em um quartel da Marinha, Exército ou Aeronáutica, destinada à formação de reservista de 1ª ou 2ª categoria, visando à defesa da Pátria.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                  3. O QUE REPRESENTA O SERVIÇO MILITAR INICIAL OBRIGATÓRIO?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion1">
+                  <div class="accordion-body">Representa a oportunidade do brasileiro exercer o ato de cidadania de servir e defender a Pátria.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                  4. O QUE É SERVIR A PÁTRIA?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion1">
+                  <div class="accordion-body">É prestar um compromisso de defender a soberania da Pátria e a integridade de seu povo.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                  5. O QUE É A CONVOCAÇÃO PARA O SERVIÇO MILITAR INICIAL OBRIGATÓRIO?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordion1">
+                  <div class="accordion-body">É quando o brasileiro é chamado a realizar o alistamento militar, a fim de concorrer à seleção para servir em um quartel da Marinha, Exército ou Aeronáutica por um período determinado.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                  6. O QUE É CLASSE CONVOCADA PARA O SERVIÇO MILITAR INICIAL OBRIGATÓRIO?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordion1">
+                  <div class="accordion-body">É o conjunto dos brasileiros nascidos em um mesmo ano chamados a realizar o alistamento militar.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                  7. O QUE É SERVIÇO MILITAR ALTERNATIVO?
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordion1">
+                  <div class="accordion-body">É o exercício de atividades de carácter administrativo, assistencial, filantrópico ou mesmo produtivo, em substituição às atividades de carácter essencialmente militar.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                  8. QUEM PODE OPTAR PELO SERVIÇO MILITAR ALTERNATIVO?
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordion1">
+                  <div class="accordion-body">O cidadão que, após alistado, alegar imperativo de consciência decorrente de crença religiosa ou convicção filosófica ou política.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                  9. COMO OPTAR PELO SERVIÇO MILITAR ALTERNATIVO?
+                  </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordion1">
+                  <div class="accordion-body">O cidadão deve apresentar declaração de imperativo de consciência com as razões de sua objeção, conforme especificado na legislação aplicável.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2 (Alistamento Militar) -->
+          <div class="tab-pane fade" id="tabp2" role="tabpanel" aria-labelledby="tab2">
+            <div class="accordion" id="accordion2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading21">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
+                  1. O QUE É ALISTAMENTO MILITAR?
+                  </button>
+                </h2>
+                <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordion2">
+                  <div class="accordion-body">É quando o brasileiro convocado para o serviço militar inicial obrigatório se inscreve para concorrer à seleção em um quartel da Marinha, Exército ou Aeronáutica.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading22">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="true" aria-controls="collapse22">
+                  2. O QUE É JUNTA DE SERVIÇO MILITAR?
+                  </button>
+                </h2>
+                <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Local pertencente à Prefeitura Municipal onde o brasileiro realiza seu alistamento presencial, recebe seu documento militar e/ou regulariza sua situação militar.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading23">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="true" aria-controls="collapse23">
+                  3. COMO FAÇO PARA ME ALISTAR?
+                  </button>
+                </h2>
+                <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Acesse o site alistamento.eb.mil.br ou compareça a uma Junta de Serviço Militar mais próxima da sua residência.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading24">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="true" aria-controls="collapse24">
+                  4. QUEM DEVE SE ALISTAR?
+                  </button>
+                </h2>
+                <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Todo brasileiro do sexo masculino no ano em que completar 18 anos.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading25">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="true" aria-controls="collapse25">
+                  5. QUANDO DEVO ME ALISTAR?
+                  </button>
+                </h2>
+                <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Nos primeiros 6 meses (janeiro a junho) do ano em completar 18 anos de idade. Após esse prazo, será necessário regularizar e pagar a multa correspondente.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading26">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse26" aria-expanded="true" aria-controls="collapse26">
+                  6. O QUE DEVO FAZER PARA ME ALISTAR PELA INTERNET?
+                  </button>
+                </h2>
+                <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Acesse o site alistamento.eb.mil.br, informe o número do CPF para validação dos seus dados pessoais e preencha o formulário de alistamento militar.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading27">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse27" aria-expanded="true" aria-controls="collapse27">
+                  7. POSSO ME ALISTAR PELA INTERNET SEM CPF?
+                  </button>
+                </h2>
+                <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Não. Quem não possui CPF deve se dirigir a uma Junta de Serviço Militar munido dos documentos exigidos (certidão de nascimento, comprovante de residência, documento oficial com foto, etc.).</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading28">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse28" aria-expanded="true" aria-controls="collapse28">
+                  8. PERDI O PRAZO DE ALISTAMENTO, O QUE FAÇO?
+                  </button>
+                </h2>
+                <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Compareça à Junta de Serviço Militar mais próxima da sua residência, pague a multa militar e realize seu alistamento.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading29">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse29" aria-expanded="true" aria-controls="collapse29">
+                  9. O QUE É MULTA MILITAR?
+                  </button>
+                </h2>
+                <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29" data-bs-parent="#accordion2">
+                  <div class="accordion-body">É uma penalidade pecuniária que é corrigida periodicamente.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading210">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse210" aria-expanded="true" aria-controls="collapse210">
+                  10. O QUE ACONTECE PARA QUEM NÃO SE ALISTA DENTRO DO PRAZO?
+                  </button>
+                </h2>
+                <div id="collapse210" class="accordion-collapse collapse" aria-labelledby="heading210" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Além da multa, a pessoa ficará em débito com o Serviço Militar e poderá ter restrições em emissão de documentos, ingresso em concursos, entre outros.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading211">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse211" aria-expanded="true" aria-controls="collapse211">
+                  11. NÃO ME ALISTEI, DEVO ME ALISTAR ATÉ QUE IDADE?
+                  </button>
+                </h2>
+                <div id="collapse211" class="accordion-collapse collapse" aria-labelledby="heading211" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Até 31 de dezembro do ano em completar 45 anos de idade, permanecendo em débito até regularizar.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading212">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse212" aria-expanded="true" aria-controls="collapse212">
+                  12. POSSO ADIAR O ALISTAMENTO?
+                  </button>
+                </h2>
+                <div id="collapse212" class="accordion-collapse collapse" aria-labelledby="heading212" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Não; após alistado, em algumas condições, é possível solicitar adiamento de incorporação.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading213">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse213" aria-expanded="true" aria-controls="collapse213">
+                  13. O QUE É ADIAMENTO DE INCORPORAÇÃO?
+                  </button>
+                </h2>
+                <div id="collapse213" class="accordion-collapse collapse" aria-labelledby="heading213" data-bs-parent="#accordion2">
+                  <div class="accordion-body">É a transferência do alistado para outra classe a fim de concorrer à incorporação em data posterior.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading214">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse214" aria-expanded="true" aria-controls="collapse214">
+                  14. ONDE POSSO SOLICITAR O ADIAMENTO DE INCORPORAÇÃO?
+                  </button>
+                </h2>
+                <div id="collapse214" class="accordion-collapse collapse" aria-labelledby="heading214" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Na Junta de Serviço Militar mais próxima da residência durante o período de alistamento ou na Comissão de Seleção.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading215">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse215" aria-expanded="true" aria-controls="collapse215">
+                  15. QUEM CURSA MEDICINA, FARMÁCIA, ODONTOLOGIA OU VETERINÁRIA, PODE ADIAR A INCORPORAÇÃO?
+                  </button>
+                </h2>
+                <div id="collapse215" class="accordion-collapse collapse" aria-labelledby="heading215" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Sim, pode adiar até o término do curso, concorrendo posteriormente a vagas específicas.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading216">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse216" aria-expanded="true" aria-controls="collapse216">
+                  16. A pessoa com deficiência deve se alistar?
+                  </button>
+                </h2>
+                <div id="collapse216" class="accordion-collapse collapse" aria-labelledby="heading216" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Sim, o alistamento é obrigatório; poderá solicitar Certificado de Isenção se preencher os requisitos médicos.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading217">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse217" aria-expanded="true" aria-controls="collapse217">
+                  17. QUEM TEM NECESSIDADE ESPECIAL VISÍVEL, DEVE SE ALISTAR?
+                  </button>
+                </h2>
+                <div id="collapse217" class="accordion-collapse collapse" aria-labelledby="heading217" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Sim; após alistamento, mediante parecer médico, poderá solicitar Certificado de Isenção (CI).</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading218">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse218" aria-expanded="true" aria-controls="collapse218">
+                  18. QUEM TEM INCAPACIDADE ABSOLUTA E NÃO PODE COMPARECER A JUNTA?
+                  </button>
+                </h2>
+                <div id="collapse218" class="accordion-collapse collapse" aria-labelledby="heading218" data-bs-parent="#accordion2">
+                  <div class="accordion-body">O absolutamente incapaz poderá ser representado pelo tutor ou curador legal mediante documento competente.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading219">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse219" aria-expanded="true" aria-controls="collapse219">
+                  19. O QUE FAÇO APÓS ESTAR ALISTADO?
+                  </button>
+                </h2>
+                <div id="collapse219" class="accordion-collapse collapse" aria-labelledby="heading219" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Consulte o site alistamento.eb.mil.br para verificar se foi dispensado ou encaminhado à seleção.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading220">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse220" aria-expanded="true" aria-controls="collapse220">
+                  20. MUDEI DE CIDADE, COMO FAÇO A TRANSFERÊNCIA DE ENDEREÇO?
+                  </button>
+                </h2>
+                <div id="collapse220" class="accordion-collapse collapse" aria-labelledby="heading220" data-bs-parent="#accordion2">
+                  <div class="accordion-body">Compareça à Junta de Serviço Militar mais próxima com comprovante de residência e documento de identidade.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3 (Dispensa) -->
+          <div class="tab-pane fade" id="tabp3" role="tabpanel" aria-labelledby="tab3">
+            <div class="accordion" id="accordion3">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading31">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse31" aria-expanded="true" aria-controls="collapse31">
+                  1. QUEM É O ÚNICO SUSTENTO DA FAMÍLIA (ARRIMO), PODE SER DISPENSADO?
+                  </button>
+                </h2>
+                <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="heading31" data-bs-parent="#accordion3">
+                  <div class="accordion-body">Sim; deve apresentar documentos comprobatórios na Junta de Serviço Militar.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading32">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse32" aria-expanded="true" aria-controls="collapse32">
+                  2. O QUE DEVO FAZER SE FOR DISPENSADO?
+                  </button>
+                </h2>
+                <div id="collapse32" class="accordion-collapse collapse" aria-labelledby="heading32" data-bs-parent="#accordion3">
+                  <div class="accordion-body">Poderá requerer o certificado militar no site alistamento.eb.mil.br ou comparecer à JSM com documentos exigidos.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading33">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse33" aria-expanded="true" aria-controls="collapse33">
+                  3. POR QUE O DISPENSADO TEM QUE IR À JUNTA DE SERVIÇO MILITAR?
+                  </button>
+                </h2>
+                <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33" data-bs-parent="#accordion3">
+                  <div class="accordion-body">Porque precisa participar da cerimônia cívica de Juramento à Bandeira e receber o Certificado de Dispensa de Incorporação (CDI).</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading34">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse34" aria-expanded="true" aria-controls="collapse34">
+                  4. POR QUE FUI DISPENSADO ANTES DE COMPARECER À SELEÇÃO?
+                  </button>
+                </h2>
+                <div id="collapse34" class="accordion-collapse collapse" aria-labelledby="heading34" data-bs-parent="#accordion3">
+                  <div class="accordion-body">Pode ocorrer por excesso de inscritos na região ou falta de vagas nos quarteis.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading35">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse35" aria-expanded="true" aria-controls="collapse35">
+                  5. QUEM FOI DISPENSADO PODE SE ALISTAR NOVAMENTE PARA SERVIR?
+                  </button>
+                </h2>
+                <div id="collapse35" class="accordion-collapse collapse" aria-labelledby="heading35" data-bs-parent="#accordion3">
+                  <div class="accordion-body">Não; o alistamento é realizado uma única vez. Existem outras formas de ingresso, como concurso público ou serviço temporário voluntário.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading36">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse36" aria-expanded="true" aria-controls="collapse36">
+                  6. QUEM FALTA AO JURAMENTO À BANDEIRA, O QUE DEVE FAZER?
+                  </button>
+                </h2>
+                <div id="collapse36" class="accordion-collapse collapse" aria-labelledby="heading36" data-bs-parent="#accordion3">
+                  <div class="accordion-body">Compareça à Junta de Serviço Militar para agendar nova data para juramento à bandeira.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading37">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse37" aria-expanded="true" aria-controls="collapse37">
+                  7. QUAL O PRAZO PARA RECEBER O CERTIFICADO DE DISPENSA?
+                  </button>
+                </h2>
+                <div id="collapse37" class="accordion-collapse collapse" aria-labelledby="heading37" data-bs-parent="#accordion3">
+                  <div class="accordion-body">O prazo varia conforme a capacidade de atendimento de cada JSM; modalidades de pagamento (PIX/cartão/GRU) influenciam no procedimento.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4 (Alistamento Feminino) -->
+          <div class="tab-pane fade" id="tabp4" role="tabpanel" aria-labelledby="tab4">
+            <div class="accordion" id="accordion4">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading41">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse41" aria-expanded="true" aria-controls="collapse41">
+                  1. O que é o serviço militar inicial feminino (SMIF)?
+                  </button>
+                </h2>
+                <div id="collapse41" class="accordion-collapse collapse" aria-labelledby="heading41" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">É uma forma voluntária de alistamento às Forças Armadas das mulheres no ano em que completam 18 anos de idade, a fim de concorrer à prestação do SMIF (temporário).</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading42">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse42" aria-expanded="true" aria-controls="collapse42">
+                  2. Como fazer o alistamento feminino em 2026?
+                  </button>
+                </h2>
+                <div id="collapse42" class="accordion-collapse collapse" aria-labelledby="heading42" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">No período previsto, de 1º janeiro a 30 junho 2026, através do sítio https://alistamento.eb.mil.br/ ou presencialmente na JSM do seu município.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading43">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse43" aria-expanded="true" aria-controls="collapse43">
+                  3. Quais mulheres poderão se alistar em 2026?
+                  </button>
+                </h2>
+                <div id="collapse43" class="accordion-collapse collapse" aria-labelledby="heading43" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Somente as mulheres nascidas em 2007 que residam nos municípios contemplados inicialmente pelo SMIF, conforme o PGC.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading44">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse44" aria-expanded="true" aria-controls="collapse44">
+                  4. O alistamento será obrigatório?
+                  </button>
+                </h2>
+                <div id="collapse44" class="accordion-collapse collapse" aria-labelledby="heading44" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Não, o alistamento feminino é voluntário.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading45">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse45" aria-expanded="true" aria-controls="collapse45">
+                  5. Qual o período para o alistamento feminino?
+                  </button>
+                </h2>
+                <div id="collapse45" class="accordion-collapse collapse" aria-labelledby="heading45" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Será entre 1º de janeiro a 30 de junho de 2026.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading46">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse46" aria-expanded="true" aria-controls="collapse46">
+                  6. Há pagamento de alguma taxa para realizar o alistamento?
+                  </button>
+                </h2>
+                <div id="collapse46" class="accordion-collapse collapse" aria-labelledby="heading46" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Não, sem custos para a cidadã voluntária.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading47">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse47" aria-expanded="true" aria-controls="collapse47">
+                  7. Quantas vagas para o SMIF em 2026?
+                  </button>
+                </h2>
+                <div id="collapse47" class="accordion-collapse collapse" aria-labelledby="heading48" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Inicialmente aproximadamente 1.465 vagas, com previsão de aumento progressivo.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading48">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse48" aria-expanded="true" aria-controls="collapse48">
+                  8. Haverá ampliação de municípios e vagas?
+                  </button>
+                </h2>
+                <div id="collapse48" class="accordion-collapse collapse" aria-labelledby="heading48" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Sim, de forma gradativa conforme mais Organizações Militares estiverem preparadas.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading49">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse49" aria-expanded="true" aria-controls="collapse49">
+                  9. Após o alistamento, quais são as próximas fases?
+                  </button>
+                </h2>
+                <div id="collapse49" class="accordion-collapse collapse" aria-labelledby="heading49" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Entrevista, inspeção de saúde, teste físico e demais etapas de seleção específicas de cada Força.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading410">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse410" aria-expanded="true" aria-controls="collapse410">
+                  10. A candidata poderá escolher em qual Força irá servir?
+                  </button>
+                </h2>
+                <div id="collapse410" class="accordion-collapse collapse" aria-labelledby="heading410" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Será consultada sobre preferência, mas a definição depende de vagas disponíveis e aptidões vocacionais.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading411">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse411" aria-expanded="true" aria-controls="collapse411">
+                  11. Qual o cargo que as mulheres receberão?
+                  </button>
+                </h2>
+                <div id="collapse411" class="accordion-collapse collapse" aria-labelledby="heading411" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Marinheiros-recrutas (Marinha), soldados (Exército) ou soldados de segunda-classe (Força Aérea).</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading412">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse412" aria-expanded="true" aria-controls="collapse412">
+                  12. As mulheres receberão o mesmo tratamento dispensado aos homens?
+                  </button>
+                </h2>
+                <div id="collapse412" class="accordion-collapse collapse" aria-labelledby="heading412" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Sim, direitos e proteções são garantidos em igualdade de condições.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading413">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse413" aria-expanded="true" aria-controls="collapse413">
+                  13. Quanto tempo dura o SMIF?
+                  </button>
+                </h2>
+                <div id="collapse413" class="accordion-collapse collapse" aria-labelledby="heading413" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Aproximadamente 12 meses, podendo haver prorrogação conforme necessidade.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading414">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse414" aria-expanded="true" aria-controls="collapse414">
+                  14. Benefícios para mulheres incorporadas?
+                  </button>
+                </h2>
+                <div id="collapse414" class="accordion-collapse collapse" aria-labelledby="heading414" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Remuneração, adicional de férias, acesso ao sistema de saúde, auxílio-alimentação, auxílio-transporte, licença maternidade, entre outros benefícios.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading415">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse415" aria-expanded="true" aria-controls="collapse415">
+                  15. Haverá estabilidade após o SMIF?
+                  </button>
+                </h2>
+                <div id="collapse415" class="accordion-collapse collapse" aria-labelledby="heading415" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Não; as incorporadas passam a compor a reserva não remunerada, como ocorre com os homens.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading416">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse416" aria-expanded="true" aria-controls="collapse416">
+                  16. As mulheres exercerão as mesmas atividades dos homens?
+                  </button>
+                </h2>
+                <div id="collapse416" class="accordion-collapse collapse" aria-labelledby="heading416" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Sim, receberão as mesmas capacitações e poderão desempenhar funções idênticas.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading417">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse417" aria-expanded="true" aria-controls="collapse417">
+                  17. Haverá capacitação adicional durante o SMIF?
+                  </button>
+                </h2>
+                <div id="collapse417" class="accordion-collapse collapse" aria-labelledby="heading417" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Sim, cursos profissionalizantes podem ser ofertados conforme demanda regional (Projeto Soldado Cidadão).</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading418">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse418" aria-expanded="true" aria-controls="collapse418">
+                  18. Haverá diferença no treinamento físico?
+                  </button>
+                </h2>
+                <div id="collapse418" class="accordion-collapse collapse" aria-labelledby="heading418" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Treinos serão semelhantes; índices de avaliação definidos por cada Força.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading419">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse419" aria-expanded="true" aria-controls="collapse419">
+                  19. A reservista recebe algum documento ao término do SMIF?
+                  </button>
+                </h2>
+                <div id="collapse419" class="accordion-collapse collapse" aria-labelledby="heading419" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Sim, o Certificado de Serviço Militar Inicial Feminino (CSMIF).</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading420">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse420" aria-expanded="true" aria-controls="collapse420">
+                  20. Haverá obrigação anual para a reservista?
+                  </button>
+                </h2>
+                <div id="collapse420" class="accordion-collapse collapse" aria-labelledby="heading420" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Sim; apresentação anual por 5 anos após o licenciamento, com a última apresentação presencial.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading421">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse421" aria-expanded="true" aria-controls="collapse421">
+                  21. Em caso de guerra, as mulheres terão precedência?
+                  </button>
+                </h2>
+                <div id="collapse421" class="accordion-collapse collapse" aria-labelledby="heading421" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Não; reservistas serão convocadas juntamente com os homens.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading422">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse422" aria-expanded="true" aria-controls="collapse422">
+                  22. Quais documentos tratam do SMIF?
+                  </button>
+                </h2>
+                <div id="collapse422" class="accordion-collapse collapse" aria-labelledby="heading422" data-bs-parent="#accordion4">
+                  <div class="accordion-body"><p class="text-start">Lei do Serviço Militar (Lei nº 4.375/64), regulamentos e Decreto nº 12.154/2024, além do PGC.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 5 (Legislações) -->
+          <div class="tab-pane fade" id="tabp5" role="tabpanel" aria-labelledby="tab5">
+            <p class="text-start"><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d12154.htm">DECRETO Nº 12.154, DE 27 DE AGOSTO DE 2024</a></p>
+            <p class="text-start"><a href="http://www.in.gov.br/web/dou/-/portaria-gm-md-n-5.151-de-6-de-novembro-de-2024-595682541">PORTARIA MD Nº 5.151, DE 6 DE NOVEMBRO DE 2024</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (igual ao index.html) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ALISTAMENTO <span class="gold">online</span></h3>
+          <p>Plataforma oficial para alistamento militar no Brasil. Processo 100% digital, seguro e confiável.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/exercito/?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/exercito_oficial" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://br.linkedin.com/company/exercito" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@exercitooficial" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="servicos.html">Alistamento Obrigatório</a></li>
+            <li><a href="servicos.html">Alistamento Voluntário</a></li>
+            <li><a href="login.html">Segunda Via</a></li>
+            <li><a href="login.html">Acompanhamento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="pf.html">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> 0800 123 4567</li>
+            <li><i class="fas fa-envelope"></i> contato@alistamento.gov.br</li>
+            <li><i class="fas fa-map-marker-alt"></i> Brasília, DF</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alistamento Militar Online. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="/assets/lib/components-modernizr/modernizr.js"></script>
+  <script src="/assets/lib/imagesloaded/imagesloaded.min.js"></script>
+  <script src="/assets/lib/alertify/alertify.min.js"></script>
+  <script src="/assets/js/alistamento.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    function closeMobileMenu(){
+      const menu = document.getElementById('mobileMenu');
+      if(menu) menu.classList.remove('open');
+    }
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', function(){
+      document.getElementById('mobileMenu')?.classList.toggle('open');
+    });
+
+    var _paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo-cds.eb.mil.br/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '8']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+
+    // alertify defaults (preservado)
+    if (window.alertify) {
+      alertify.defaults.transition = "slide";
+      alertify.defaults.theme.ok = "btn btn-success";
+      alertify.defaults.theme.cancel = "btn btn-danger";
+      alertify.defaults.theme.input = "form-control";
+    }
+  </script>
+</body>
+</html>
