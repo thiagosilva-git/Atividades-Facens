@@ -55,110 +55,82 @@
             </div>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                ALISTAMENTO<br>
-                <span class="gold">MILITAR ONLINE</span>
-            </h1>
-            <p class="hero-subtitle">
-                Realize seu alistamento militar de forma rápida, segura e totalmente online
-            </p>
-            <div class="hero-buttons">
-                <a href="login.html"><button class="btn btn-gold btn-lg">QUERO ME ALISTAR</button></a>
-                <a href="login.html"><button class="btn btn-hero btn-lg">JÁ ME ALISTEI</button></a>
-            </div>
-
-            <!-- Quick info -->
-            <div class="quick-info">
-                <div class="info-item">
-                    <h3>100%</h3>
-                    <p>Digital e Seguro</p>
-                </div>
-                <div class="info-item">
-                    <h3>24h</h3>
-                    <p>Disponível</p>
-                </div>
-                <div class="info-item">
-                    <h3>18-45</h3>
-                    <p>Anos de Idade</p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicos" class="services">
+<body>
+    <header class="header">
         <div class="container">
-            <div class="section-header">
-                <h2>Nossos <span class="gold">Serviços</span></h2>
-                <p>Oferecemos uma plataforma completa para todas as suas necessidades relacionadas ao serviço militar</p>
+            <div class="top-bar">
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><img src="/imagens/facebook.svg" alt="Icone facebook" width="18"></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><img src="/imagens/instagram.svg" alt="Icone instagram" width="18"></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><img src="/imagens/linkedin.svg" alt="Icone linkedin" width="18"></a>
+                    <a href="#" target="_blank" aria-label="YouTube"><img src="/imagens/youtube.svg" alt="Icone youtube" width="18"></a>
+                </div>
+                <a href="#"><button class="btn btn-gold btn-sm">ALISTAMENTO MILITAR FEMININO</button></a>
             </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Alistamento Obrigatório</h3>
-                    <p>Para jovens de 18 anos que devem se apresentar ao serviço militar obrigatório.</p>
-                    <ul>
-                        <li><span class="dot"></span>Processo 100% online</li>
-                        <li><span class="dot"></span>Documentação digital</li>
-                        <li><span class="dot"></span>Acompanhamento em tempo real</li>
-                    </ul>
+            <div class="main-nav">
+                <div class="logo">
+                    <h1><a href="index.html">ALISTAMENTO <span class="gold">online</span></a></h1>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Alistamento Voluntário</h3>
-                    <p>Para cidadãos que desejam servir voluntariamente às Forças Armadas.</p>
-                    <ul>
-                        <li><span class="dot"></span>Múltiplas modalidades</li>
-                        <li><span class="dot"></span>Processo simplificado</li>
-                        <li><span class="dot"></span>Orientação completa</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <h3>Segunda Via de Documentos</h3>
-                    <p>Solicite a segunda via do seu Certificado de Reservista ou outros documentos.</p>
-                    <ul>
-                        <li><span class="dot"></span>Solicitação online</li>
-                        <li><span class="dot"></span>Entrega rápida</li>
-                        <li><span class="dot"></span>Validação automática</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Acompanhamento</h3>
-                    <p>Acompanhe o status do seu processo de alistamento em tempo real.</p>
-                    <ul>
-                        <li><span class="dot"></span>Status atualizado</li>
-                        <li><span class="dot"></span>Notificações automáticas</li>
-                        <li><span class="dot"></span>Suporte dedicado</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="services-cta">
-                <a href="servicos.html"><button class="btn btn-military btn-lg">Ver Todos os Serviços</button></a>
+                <nav class="nav">
+                    <a href="servicos.html">SERVIÇOS</a>
+                    <a href="pf.html">PERGUNTAS FREQUENTES</a>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main>
+        <div class="container" style="padding-top: 150px; padding-bottom: 80px;">
+            <section class="form-section">
+                <h2>INFORMAÇÕES INICIAIS</h2>
+                <hr>
+                <form class="enlistment-form">
+                    <div class="form-grid">
+                        <label for="birthdate">Data de nascimento</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        
+                        <div></div> <div class="validation-row">
+                            <button type="button" class="btn btn-gold"><i class="fas fa-search"></i> VALIDAR</button>
+                        </div>
+
+                        <label for="citizen-name">Nome do Cidadão</label>
+                        <input type="text" id="citizen-name" name="citizen-name" placeholder="..." disabled>
+
+                        <label for="mother-name">Nome da Mãe</label>
+                        <input type="text" id="mother-name" name="mother-name" placeholder="..." disabled>
+
+                        <label for="city">Município de Residência</label>
+                        <select id="city" name="city" required>
+                            <option value="">-- selecione --</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                        </select>
+
+                        <label for="enlistment-place">Local de Alistamento</label>
+                        <select id="enlistment-place" name="enlistment-place" required>
+                            <option value="">-- selecione --</option>
+                            <option value="junta1">Junta Militar 001</option>
+                            <option value="junta2">Junta Militar 002</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-military btn-lg">AVANÇAR <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+       </footer>
+</body>
+
+    
 
     <!-- Footer -->
     <footer class="footer">

@@ -31,6 +31,16 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 }
+html {
+    overflow-y: auto; /* Garante que o scroll vertical sempre apareça quando necessário */
+}
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: var(--font-primary);
@@ -671,5 +681,93 @@ a{
         flex-direction: column;
         gap: 16px;
         text-align: center;
+    }
+}
+
+/* --- Estilos para o Formulário de Alistamento --- */
+
+.form-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h2 {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    color: var(--gray-dark);
+    margin-bottom: 8px;
+}
+
+.form-section hr {
+    border: none;
+    height: 2px;
+    background-color: var(--gray-light);
+    margin-bottom: 32px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Coluna das labels e coluna dos inputs */
+    gap: 20px 24px; /* Espaçamento vertical e horizontal */
+    align-items: center;
+}
+
+.form-grid label {
+    text-align: right;
+    font-weight: 500;
+    color: var(--gray-medium);
+}
+
+.form-grid input,
+.form-grid select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    font-family: var(--font-primary);
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+    outline: none;
+    border-color: var(--military-green-light);
+    box-shadow: 0 0 0 2px rgba(74, 124, 44, 0.2);
+}
+
+.form-grid input[disabled] {
+    background-color: #e9ecef;
+    color: var(--gray-medium);
+    cursor: not-allowed;
+}
+
+.validation-row {
+    justify-self: start; /* Alinha o botão à esquerda da sua célula */
+}
+
+.form-actions {
+    margin-top: 40px;
+    text-align: right; /* Alinha o botão "Avançar" à direita */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Uma coluna só no mobile */
+    }
+
+    .form-grid label {
+        text-align: left; /* Alinha as labels à esquerda */
+        margin-bottom: -12px; /* Reduz o espaço entre label e input */
+    }
+
+    .validation-row,
+    .form-actions {
+        text-align: left;
     }
 }
