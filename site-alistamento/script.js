@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
+    // Garante que o código só rode se os elementos existirem na página
     if (mobileMenuBtn && mobileMenu) {
         // Função para abrir/fechar o menu ao clicar no ícone
         mobileMenuBtn.addEventListener('click', function() {
@@ -13,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// =========================================================
-// NOVA FUNÇÃO PARA FECHAR O MENU AO CLICAR EM UM LINK
-// =========================================================
+// Função para fechar o menu ao clicar em um link
 function closeMobileMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
     if (mobileMenu) {
