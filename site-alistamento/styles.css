@@ -771,3 +771,8 @@ a{
         text-align: left;
     }
 }
+
+.page-content {
+    padding-top: 150px;  /* Ajuste este valor se a altura do seu header mudar */
+    padding-bottom: 80px;
+}
