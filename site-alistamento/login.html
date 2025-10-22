@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <form id="loginForm" autocomplete="on" aria-describedby="desc" style="display: flex; flex-direction: column; gap: 16px;">
+      <form id="loginForm" autocomplete="on" action="formalis.html"   aria-describedby="desc" style="display: flex; flex-direction: column; gap: 16px;">
         <p id="desc" class="small" style="color: var(--gray-dark); font-size: 0.95rem;">Insira seu CPF, e-mail ou usuário e sua senha.</p>
 
         <div>
@@ -56,7 +56,7 @@
     document.getElementById('clientId').textContent = qs('client_id') || '—';
     document.getElementById('authId').textContent = qs('authorization_id') || '—';
 
-    const form = document.getElementById('loginForm');
+    /*const form = document.getElementById('loginForm');
     form.addEventListener('submit', function(e){
       e.preventDefault();
       // comportamento simulado: cria token falso e redireciona para um callback local
@@ -68,7 +68,7 @@
       // Mostra alerta (para prototipagem) e redireciona
       alert('Login simulado concluído — redirecionando para: ' + callback);
       window.location.href = callback;
-    });
+    });*/
 
     document.getElementById('altSign').addEventListener('click', function(){
       alert('Fluxo de login por app (simulado)');
