@@ -67,9 +67,12 @@ a{
 
 /* Botoes */
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 24px;
     border: none;
+    gap: 8px;
     border-radius: 6px;
     font-weight: var(--font-weight-bold);
     text-decoration: none;

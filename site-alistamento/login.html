@@ -56,20 +56,6 @@
     document.getElementById('clientId').textContent = qs('client_id') || '—';
     document.getElementById('authId').textContent = qs('authorization_id') || '—';
 
-    /*const form = document.getElementById('loginForm');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      // comportamento simulado: cria token falso e redireciona para um callback local
-      const token = 'fake_token_' + Math.random().toString(36).slice(2,12);
-      const client = encodeURIComponent(qs('client_id') || 'local');
-      const auth = encodeURIComponent(qs('authorization_id') || '');
-      // Gera URL de callback (apenas exemplo); em integração real o servidor trataria o token
-      const callback = (qs('redirect_uri') || 'callback.html') + '?access_token=' + token + '&client_id=' + client + '&authorization_id=' + auth;
-      // Mostra alerta (para prototipagem) e redireciona
-      alert('Login simulado concluído — redirecionando para: ' + callback);
-      window.location.href = callback;
-    });*/
-
     document.getElementById('altSign').addEventListener('click', function(){
       alert('Fluxo de login por app (simulado)');
     });
