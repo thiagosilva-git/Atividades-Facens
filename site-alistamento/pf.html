@@ -814,33 +814,6 @@
   <script src="/assets/js/alistamento.js"></script>
   <script src="/assets/js/main.js"></script>
 
-  <script>
-    function closeMobileMenu(){
-      const menu = document.getElementById('mobileMenu');
-      if(menu) menu.classList.remove('open');
-    }
-    document.getElementById('mobileMenuBtn')?.addEventListener('click', function(){
-      document.getElementById('mobileMenu')?.classList.toggle('open');
-    });
-
-    var _paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matomo-cds.eb.mil.br/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '8']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-
-    // alertify defaults (preservado)
-    if (window.alertify) {
-      alertify.defaults.transition = "slide";
-      alertify.defaults.theme.ok = "btn btn-success";
-      alertify.defaults.theme.cancel = "btn btn-danger";
-      alertify.defaults.theme.input = "form-control";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
